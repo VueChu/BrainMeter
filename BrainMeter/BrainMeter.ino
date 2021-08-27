@@ -118,7 +118,7 @@ public:
 };
 
 DoublyLinkedList brainMeter;
-
+Brain brain(Serial1);
 void setup() {
   // put your setup code here, to run once:
   Serial1.begin(9600);
@@ -126,8 +126,6 @@ void setup() {
   setUpPins();
   
 }
-
-Brain brain(Serial1);
 
 void loop() 
 {

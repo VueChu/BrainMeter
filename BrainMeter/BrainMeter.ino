@@ -1,8 +1,7 @@
 #include <Brain.h>
 #include <Keyboard.h>
 
-int MAX_NUM_PINS = 12;
-long attentionValue;
+int MAX_NUM_PINS = 12, attentionValue;
 /*
  * Author: VueChu
  * Github: https://github.com/VueChu/
@@ -119,6 +118,7 @@ public:
 
 DoublyLinkedList brainMeter;
 Brain brain(Serial1);
+
 void setup() {
   // put your setup code here, to run once:
   Serial1.begin(9600);

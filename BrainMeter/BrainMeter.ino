@@ -15,7 +15,7 @@ long attentionValue;
  *  - Absolute attention/focus values = Red LEDs will luminate. (Max High attention/focus value is 99)
  */
  
-class DoublyLinkedList//An array would actually make this a lot memory friendly.
+class DoublyLinkedList
 {  
 private:
   struct Node
@@ -45,8 +45,11 @@ public:
       delete temp;
     }
   }
+  
   /*
-   * Creating a linked list/Inserting a node to the already existing doubly linked list.
+   * insert()
+   * Creates a node and inserts it into a doubly linked list. Each node will represent an LED on the breadboard.
+   * params: int pinNumber, int value
    */
   void insert(int pinNumber, int value)
   {
@@ -128,7 +131,6 @@ Brain brain(Serial1);
 
 void loop() 
 {
-  // put your main code here, to run repeatedly:
   if(brain.update())
   {
     attentionValue = brain.readAttention();

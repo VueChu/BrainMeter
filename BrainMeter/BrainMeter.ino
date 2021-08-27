@@ -70,6 +70,7 @@ public:
       tail = temp;
     }
   }
+  
   /*
    * setUpPins()
    * Will iterate through each node in the doubly linked list to retrieve its pin values to set it as an output.
@@ -124,7 +125,6 @@ void setup() {
   Serial1.begin(9600);
   Serial.begin(9600);
   setUpPins();
-  
 }
 
 void loop() 

@@ -4,7 +4,7 @@ A 12 LED display that would represent the user's focus/attention values using an
 # Author's Note:
 I created this for the sole purpose of learning how to program on an Arduino, practicing object oriented programming and a doubly linked list.
 This project was heavily inspired by Michael Reeves who used the Star Wars Force Trainer to drive his car with his mind. Click [here](https://youtu.be/mPbtR4vorgY).
-Thank you to kitschpatrol, rambo, and jospehfrazier for providing the library to parse data from the Neurosky EEG headsets and by providing a guide on how to physicallyt modify the Neurosky EEG chip. Click [here](https://github.com/kitschpatrol/Brain) for the link to their github.
+Thank you to kitschpatrol, rambo, and jospehfrazier for providing the library to parse data from the Neurosky EEG headsets and by providing a guide on how to physically modify the Neurosky EEG chip. Click [here](https://github.com/kitschpatrol/Brain) for the link to their github.
 If you see anything that can be improved or have any tips (including this readme file), I would greatly appreciate any sort of feedback.
 
 ### Summary:
@@ -16,7 +16,7 @@ This program's purpose is to display the user's focus/attention values through a
 	- If you used a Leonardo like I did in the code BrainMeter.ino, you should be completely set with the Serial reference.
 	- If you used an Uno, change the references "Serial1" to "Serial". This is due to the fact that Leonardo supports onboard USB, whereas the Uno does not.
 - Breadboard - 1
-- 150? resistors - 12
+- 150Ω resistors - 12
 - LED - 12
 - Any USB that is compatible with your Arduino that can be connected to a computer.
 - A computer.
@@ -65,7 +65,7 @@ This program's purpose is to display the user's focus/attention values through a
 	
   - ```void brainRun(int attentionValue)```
   
-    - This function will iterate until the focus/attention values are correctly displayed on the brian meter.
+    - This function will iterate until the focus/attention values are correctly displayed on the brain meter.
 	- Params: int attentionValue
 
 ### ---End of DoublyLinkedList Class---

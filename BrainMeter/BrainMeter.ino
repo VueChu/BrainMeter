@@ -1,5 +1,4 @@
 #include <Brain.h>
-#include <Keyboard.h>
 
 int MAX_NUM_PINS = 12, attentionValue;
 /*

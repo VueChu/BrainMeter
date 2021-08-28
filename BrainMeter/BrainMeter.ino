@@ -107,9 +107,6 @@ public:
       else  //No conditions above are satisfied, then exit the loop.
       {
         exitWhileLoop = true;
-        Serial.println(attentionValue);
-        Serial.print("Current node value: ");
-        Serial.println(currentNode->value);
       }
     }
   }

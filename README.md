@@ -3,8 +3,8 @@ A 12 LED display that would represent the user's focus/attention values using an
 
 # Author's Note:
 I created this for the sole purpose of learning how to program on an Arduino, practicing object oriented programming and a doubly linked list.
-This project was heavily inspired by Michael Reeves who used the Star Wars Force Trainer to drive his car with his mind. (insert link to video).
-Thank you to kitschpatrol, rambo, and jospehfrazier for providing the library to parse data from the Neurosky EEG headsets and by providing a guide on how to physicallyt modify the Neurosky EEG chip. (insert link to github).
+This project was heavily inspired by Michael Reeves who used the Star Wars Force Trainer to drive his car with his mind. Click [here](https://youtu.be/mPbtR4vorgY).
+Thank you to kitschpatrol, rambo, and jospehfrazier for providing the library to parse data from the Neurosky EEG headsets and by providing a guide on how to physicallyt modify the Neurosky EEG chip. Click [here](https://github.com/kitschpatrol/Brain) for the link to their github.
 If you see anything that can be improved or have any tips (including this readme file), I would greatly appreciate any sort of feedback.
 
 ### Summary:
@@ -20,9 +20,10 @@ This program's purpose is to display the user's focus/attention values through a
 - LED - 12
 - Any USB that is compatible with your Arduino that can be connected to a computer.
 - A computer.
-
+- Star Wars Force Trainer or Mindflex headband that utilizes the Neurosky EEG chip.
+- The Brain library needed to parse the incoming data from the headset. Click [here](https://github.com/kitschpatrol/Brain) for the link to the github.
 ### Diagram:
-![here]() <<Insert Link>>
+![here](https://github.com/VueChu/BrainMeter/blob/main/BrainMeter%20Diagram.png)
 ### ---DoublyLinkedList Class---
 - ### Struct Node
 	- ```int pinNumber```

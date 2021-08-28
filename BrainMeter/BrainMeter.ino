@@ -46,6 +46,19 @@ public:
   }
   
   /*
+   * setUpPins()
+   * Will iterate through each node in the doubly linked list to retrieve its pin values to set it as an output.
+   */
+  void setUpPins()
+  {
+    Node* iterator;
+    while(iterator) //While iterator is not NULL, assign the pins.
+    {
+      pinMode(iterator->pinNumber, OUTPUT);
+    }
+  }
+  
+  /*
    * insert()
    * Creates a node and inserts it into a doubly linked list. Each node will represent an LED on the breadboard.
    * params: int pinNumber, int value
@@ -70,20 +83,6 @@ public:
       tail = temp;
     }
   }
-  
-  /*
-   * setUpPins()
-   * Will iterate through each node in the doubly linked list to retrieve its pin values to set it as an output.
-   */
-  void setUpPins()
-  {
-    Node* iterator;
-    while(iterator) //While iterator is not NULL, assign the pins.
-    {
-      pinMode(iterator->pinNumber, OUTPUT);
-    }
-  }
-
 
   /*
    * brainRun()
@@ -124,7 +123,8 @@ void setup() {
   // put your setup code here, to run once:
   Serial1.begin(9600);
   Serial.begin(9600);
-  setUpPins();
+  setUpNodeAttributes();
+  brainMeter.setUpPins();
 }
 
 void loop() 
@@ -138,10 +138,10 @@ void loop()
 }
 
 /*
- * setUpPins()
+ * setUpNodeAttributes()
  * Creates a node's attributes with an assigned pin number, value for the attention threshold values, and inserts it to the doubly linked list.
  */
-void setUpPins()
+void setUpNodeAttributes()
 {
   for(int i = 0; i < MAX_NUM_PINS; i++)
   {
